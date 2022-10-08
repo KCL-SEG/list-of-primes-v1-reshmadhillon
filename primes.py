@@ -6,7 +6,7 @@ def primes(number_of_primes):
     i = 2
     if number_of_primes > 0:
         list.append(i)
-    while len(list) < 10:
+    while len(list) < number_of_primes:
         prime = True
         i = i + 1
         for j in range (2,i):
@@ -17,5 +17,3 @@ def primes(number_of_primes):
             list.append(i)
 
     return list
-
-print(primes(10))
