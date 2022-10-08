@@ -3,4 +3,19 @@
 
 def primes(number_of_primes):
     list = []
+    i = 2
+    if number_of_primes > 0:
+        list.append(i)
+    while len(list) < 10:
+        prime = True
+        i = i + 1
+        for j in range (2,i):
+            if i % j == 0:
+                prime = False
+                break
+        if prime == True:
+            list.append(i)
+
     return list
+
+print(primes(10))
